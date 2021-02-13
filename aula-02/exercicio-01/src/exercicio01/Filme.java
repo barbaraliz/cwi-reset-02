@@ -7,10 +7,10 @@ public class Filme {
         private int anoLancamento;
         private int duracao;
         private int avaliacao;
-        private Diretor diretor;
+        private exercicio01.Diretor diretor;
         //Necessário criar a classe construtor
 
-    public Filme(String nome, String descricao, int anoLancamento, int duracao, int nota, Diretor diretor) {
+    public Filme(String nome, String descricao, int anoLancamento, int duracao, int nota, exercicio01.Diretor diretor) {
         this.nome = nome;
         this.descricao = descricao;
         this.anoLancamento = anoLancamento;
