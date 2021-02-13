@@ -3,6 +3,7 @@ public class Aplicacao {
     public static void main(String[] args) {
 
         //Exercício #1 - Calculadora
+        System.out.println("# Calculadora: ");
         Calculadora calcular = new Calculadora ();
         int resultadoSoma = calcular.soma(1,2);
         System.out.println("Resultado soma: " + resultadoSoma);
@@ -17,11 +18,13 @@ public class Aplicacao {
         System.out.println("Resultado divisão: " + resultadoDivisao);
 
         //Exercício #2 - Comprador
+        System.out.println("# Comparador: ");
         Comparador comparar = new Comparador();
         boolean resultadoComparador = comparar.menorQue(1,2);
         System.out.println("O primeiro número é maior que o segundo? " + resultadoComparador);
 
         //Exercício #3 - Gerenciador de Notas
+        System.out.println("# Gerenciador de notas de aluno: ");
         Aluno aluno = new Aluno("Bárbara", 7.5);
         aluno.situacao();
         System.out.println("O aluno " + aluno.getNome() + " teve sua nota final " + aluno.getNotaFinal() + ", logo sua situação é: " + aluno.getSituacao());
