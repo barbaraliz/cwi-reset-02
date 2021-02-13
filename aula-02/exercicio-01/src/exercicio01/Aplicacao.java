@@ -3,6 +3,7 @@ package exercicio01;
 public class Aplicacao {
 
     public static void main(String[] args){
+
         Ator ator1 = new Ator("Pedro", 30,3, Genero.MASCULINO);
         Diretor diretor1 = new Diretor("João", 45, 10, Genero.MASCULINO);
         Filme filme1 = new Filme("Filme Histórico", "Filme sobre a história da humanindade",
