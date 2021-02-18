@@ -19,39 +19,39 @@ public class MinhaCasaMinhaDesgraca {
 
         Endereco endereco1 = new Endereco("Rodovia Raposo Tavares", 2460,"Apartamento 205",
                 "Lageadinho","Cotia", UnidadeFederativa.SAO_PAULO);
-        Imovel imovel1 = new Imovel(endereco1,450000);
+        Apartamento imovel1 = new Apartamento(endereco1,450000,2);
         opcoesParaFinanciamento.registrarImovel(imovel1);
 
         Endereco endereco2 = new Endereco("Avenida Governador José Malcher",50,"Sem complemento",
                 "Nazaré", "Belém", UnidadeFederativa.PARA);
-        Imovel imovel2 = new Imovel(endereco2,250000);
+        Casa imovel2 = new Casa(endereco2,250000,true);
         opcoesParaFinanciamento.registrarImovel(imovel2);
 
         Endereco endereco3 = new Endereco("Rua Tenente-Coronel Cardoso",560,"Apartamento 604",
                 "Centro", "Campos dos Goytacazes", UnidadeFederativa.RIO_DE_JANEIRO);
-        Imovel imovel3 = new Imovel(endereco3,685000);
+        Apartamento imovel3 = new Apartamento(endereco3,685000,5);
         opcoesParaFinanciamento.registrarImovel(imovel3);
 
         Endereco endereco4 = new Endereco("Rua Domingos Olímpio",12,"Loteamento B",
                 "Centro", "Sobral", UnidadeFederativa.CEARA);
-        Imovel imovel4 = new Imovel(endereco4, 350000);
+        Casa imovel4 = new Casa(endereco4, 350000,false);
         opcoesParaFinanciamento.registrarImovel(imovel4);
 
         /**
          * Teste do método opcoesParaFinanciamento.registrarImóvel(): Valor do imóvel acima dos parâmetros (50.000>valor<1.000.000)
          */
-//        Endereco endereco5 = new Endereco("Rua Domingos Olímpio",12,"Loteamento B",
-//                "Centro", "Sobral", UnidadeFederativa.CEARA);
-//        Imovel imovel5 = new Imovel(endereco4, 1500000);
+//        Endereco endereco5 = new Endereco("Caminho Vinte e Oito",877,"Apartamento 301",
+//                "Zambelê", "Vitória da Conquista", UnidadeFederativa.BAHIA);
+//        Apartamento imovel5 = new Apartamento(endereco5, 1500000, 3);
 //        opcoesParaFinanciamento.registrarImovel(imovel5);
 
         /**
         * Teste do método opcoesParaFinanciamento.registrarImóvel(): Valor do imóvel abaixo dos parâmetros (50.000>valor<1.000.000)
         */
-//        Endereco endereco5 = new Endereco("Rua Domingos Olímpio",12,"Loteamento B",
-//                "Centro", "Sobral", UnidadeFederativa.CEARA);
-//        Imovel imovel5 = new Imovel(endereco4, 40000);
-//        opcoesParaFinanciamento.registrarImovel(imovel5);
+//        Endereco endereco6 = new Endereco("Rua Maria Chaves do Nascimento",58,"Bloco C",
+//                "João Paulo II", "João Pessoa", UnidadeFederativa.PARAIBA);
+//        Casa imovel6 = new Casa(endereco6, 40000, true);
+//        opcoesParaFinanciamento.registrarImovel(imovel6);
 
         /**
          * FIM

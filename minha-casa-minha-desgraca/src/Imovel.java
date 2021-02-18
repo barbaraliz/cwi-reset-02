@@ -1,6 +1,6 @@
 import java.text.DecimalFormat;
 
-public class Imovel {
+public abstract class Imovel {
     private Endereco endereco;
     private double valor;
 
@@ -9,10 +9,7 @@ public class Imovel {
         this.valor = valor;
     }
 
-    public String apresentacao() {
-      return "Imóvel localizado no endereço "  + endereco.enderecoCompleto() + ".\nValor: R$ " +
-                DecimalFormat.getCurrencyInstance().format(this.valor) + ".";
-    }
+    public abstract String apresentacao();
 
     public Endereco getEndereco() {
         return endereco;
