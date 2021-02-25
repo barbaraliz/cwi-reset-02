@@ -6,8 +6,8 @@ public class Ator extends Pessoa {
 
     private int numeroDeOscars;
 
-    public Ator(String nome, int idade, Genero genero, int numeroDeOscars) {
-        super(nome, idade, genero);
+    public Ator(String nome, LocalDate dataNascimento, Genero genero, int numeroDeOscars) {
+        super(nome, dataNascimento, genero);
         this.numeroDeOscars = numeroDeOscars;
 
     }

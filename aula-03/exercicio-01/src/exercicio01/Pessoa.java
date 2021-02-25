@@ -6,18 +6,18 @@ import java.time.Period;
 public class Pessoa {
 
     private String nome;
-    private int idade;
+    private LocalDate dataNascimento;
     private Genero genero;
 
-    public Pessoa(String nome, int idade, Genero genero) {
+    public Pessoa(String nome, LocalDate dataNascimento, Genero genero) {
         this.nome = nome;
-        this.idade = idade;
+        this.dataNascimento = dataNascimento;
         this.genero = genero;
     }
 
     public void imprimirInformacoes() {
         System.out.println("Nome: " + this.nome + ".");
-        System.out.println("Idade: " + this.idade + " anos.");
+        System.out.println("Idade: " + Period.between(this.dataNascimento, LocalDate.now()).getYears() + " anos.");
         System.out.println("Genero: " + this.genero + ".");
     }
 
@@ -26,8 +26,8 @@ public class Pessoa {
         return nome;
     }
 
-    public int getIdade() {
-        return idade;
+    public LocalDate getIdade() {
+        return dataNascimento;
     }
 
     public Genero getGenero() {

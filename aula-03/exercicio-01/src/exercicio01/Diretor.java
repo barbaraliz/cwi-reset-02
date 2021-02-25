@@ -6,8 +6,8 @@ public class Diretor extends Pessoa {
 
     private int quantidadeDeFilmes;
 
-    public Diretor(String nome, int idade, Genero genero, int quantidadeDeFilmes) {
-        super(nome, idade, genero);
+    public Diretor(String nome, LocalDate dataNascimento, Genero genero, int quantidadeDeFilmes) {
+        super(nome, dataNascimento, genero);
         this.quantidadeDeFilmes = quantidadeDeFilmes;
     }
 
