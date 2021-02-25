@@ -1,5 +1,8 @@
 package exercicio01;
 
+import java.time.LocalDate;
+import java.time.Period;
+
 public class Pessoa {
 
     private String nome;
@@ -12,13 +15,14 @@ public class Pessoa {
         this.genero = genero;
     }
 
-        public void imprimirInformacoes() {
+    public void imprimirInformacoes() {
         System.out.println("Nome: " + this.nome + ".");
         System.out.println("Idade: " + this.idade + " anos.");
         System.out.println("Genero: " + this.genero + ".");
     }
 
     public String getNome() {
+
         return nome;
     }
 
@@ -27,6 +31,7 @@ public class Pessoa {
     }
 
     public Genero getGenero() {
+
         return genero;
     }
 }

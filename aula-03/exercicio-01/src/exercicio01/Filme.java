@@ -8,12 +8,12 @@ public class Filme {
         private int anoLancamento;
         private int duracao;
         private int avaliacao;
-//        private Diretor diretor;
+        private Diretor diretor;
         private List<Pessoa> elenco;
 
 
 
-    public Filme(String nome, String descricao, int anoLancamento, int duracao, int avaliacao,
+    public Filme(String nome, String descricao, int anoLancamento, int duracao, int avaliacao, Diretor diretor,
                  List<Pessoa> elenco) {
         defineAvaliacao(avaliacao);
         validaNomeEDefineAvaliacao (nome);
@@ -21,7 +21,7 @@ public class Filme {
         this.descricao = descricao;
         this.anoLancamento = anoLancamento;
         this.duracao = duracao;
-//        this.diretor = diretor;
+        this.diretor = diretor;
         this.elenco = elenco;
     }
     public void reproduzir() {
@@ -29,7 +29,7 @@ public class Filme {
         System.out.println("* Breve descrição: " + this.descricao + ";");
         System.out.println("* Avaliação: " + avaliacao);
         System.out.println("* Tempo de duração: " + this.duracao + " minutos;");
-//        System.out.println("* Dirigido por: " + this.diretor.getNome() + ".");
+        System.out.println("* Dirigido por: " + this.diretor.getNome() + ".");
 
     }
 

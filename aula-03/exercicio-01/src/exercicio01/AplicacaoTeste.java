@@ -7,15 +7,16 @@ public class AplicacaoTeste {
 
     public static void main(String[] args){
         List<Pessoa> elenco = new ArrayList<Pessoa>();
-        elenco.add(new Diretor("João", 45, 10, Genero.MASCULINO));
-        elenco.add(new Ator("Pedro", 30,3, Genero.MASCULINO));
-        elenco.add(new Ator("Alex", 20,5, Genero.NAO_BINARIO));
-        Filme filme1 = new Filme("Filme Histórico", "Filme sobre a história da humanindade",
-                2015, 120, 4, elenco);
 
+        Diretor diretor = new Diretor("João", 45, Genero.MASCULINO, 10);
+        elenco.add(diretor);
+        elenco.add(new Ator("Pedro", 30, Genero.MASCULINO,3));
+        elenco.add(new Ator("Alex", 20, Genero.NAO_BINARIO,5));
+        elenco.add(new Ator("Vicente", 28, Genero.MASCULINO, 8));
+        Filme filme1 = new Filme("Filme Histórico", "Filme sobre a história da humanindade",
+                2015, 120, 4, diretor, elenco);
 
         filme1.exibirCreditos();
-
 
     }
 }
